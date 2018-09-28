@@ -34,7 +34,7 @@ void loop()
   Serial.print("Connected to: "); Serial.println(WiFi.SSID());
   Serial.print("Your IP: "); Serial.println(WiFi.localIP());
 
-  int value = getSensorDistance();
+  int value = getSensorValue();
   
   HTTPClient http;
 
@@ -58,7 +58,7 @@ void loop()
   delay(10000);
 }
 
-int getSensorDistance()
+int getSensorValue()
 {
   //-- Put your code for reading sensor data here --
 }
